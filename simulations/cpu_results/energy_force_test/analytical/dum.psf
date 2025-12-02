@@ -1,0 +1,36 @@
+PSF
+
+       3 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology toppar_drude_main_protein_2023a_ion_mod.str 
+ REMARKS segment DUM { first NONE; last NONE; auto angles dihedrals }
+
+       2 !NATOM
+       1 DUM  1    DUM  DUM  DUM    0.000000        0.0000           0
+       2 DUM  2    DUM  DUM  DUM    0.000000        0.0000           0
+
+       0 !NBOND: bonds
+
+
+       0 !NTHETA: angles
+
+
+       0 !NPHI: dihedrals
+
+
+       0 !NIMPHI: impropers
+
+
+       0 !NDON: donors
+
+
+       0 !NACC: acceptors
+
+
+       0 !NNB
+
+       0       0
+
+       1       0 !NGRP
+       0       0       0
+

@@ -1,0 +1,6 @@
+Total: -300794.75262306724 kJ/mol
+1, HarmonicBondForce, 1947.2788099565664 kJ/mol
+2, PeriodicTorsionForce, 7001.272750185117 kJ/mol
+3, NonbondedForce, -315085.57744513394 kJ/mol
+4, CMMotionRemover, 0.0 kJ/mol
+5, HarmonicAngleForce, 5342.273261925039 kJ/mol

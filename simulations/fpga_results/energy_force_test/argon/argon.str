@@ -1,0 +1,21 @@
+* argon
+*
+
+READ RTF  CARD 
+*
+27 1
+MASS    85 AR    20.17970 
+RESI AR1       0.00 ! argon
+GROUP
+ATOM AR01  AR  0.00
+PATCHING FIRST NONE LAST NONE
+END
+
+READ PARA CARD
+*
+NONBonded
+AR     0.000000  -0.238065     1.9110
+END
+
+
+
