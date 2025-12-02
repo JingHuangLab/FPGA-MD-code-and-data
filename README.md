@@ -1,2 +1,13 @@
 # FPGA-MD-code-and-data
-This repository holds the implementation and simulation inputs scripts as well as some results.
+This repository holds the implementation and simulation inputs scripts as well 
+as some results for the papar "Molecular Dynamics Simulations Accelerated on 
+FPGA with High-Bandwidth Memory".
+
+## Hardware Requirements
+
+## OS Required & Software Dependencies
+
+## Build Instructions
+
+## Simulation inputs and outputs 
+
