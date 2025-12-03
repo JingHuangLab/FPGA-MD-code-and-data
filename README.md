@@ -4,8 +4,14 @@ as some results for the papar "Molecular Dynamics Simulations Accelerated on
 FPGA with High-Bandwidth Memory".
 
 ## Hardware Requirements
+ - 
+ - ...
 
 ## OS Required & Software Dependencies
+ - ...
+ - OpenMM >= 6.0.0
+ - MDTraj
+ - ...
 
 ## Build Instructions
 ### Step1:
@@ -18,4 +24,6 @@ FPGA with High-Bandwidth Memory".
 Simulation inputs, outputs, analysis scripts are given in the `simulations` 
 folder.   
 Further descriptions of these files are given in the `README` there.  
-Large size trajectories are provided at Zenodo.
+Large size trajectories are provided at Zenodo:   
+[MD Validation inputs and trajectories for "Molecular Dynamics Simulations Accelerated on FPGA with High-Bandwidth Memory"](https://doi.org/10.5281/zenodo.17796179)
+.
