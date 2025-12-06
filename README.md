@@ -4,11 +4,12 @@ as some results for the papar "Molecular Dynamics Simulations Accelerated on
 FPGA with High-Bandwidth Memory".
 
 ## Hardware Requirements
- - 
- - ...
+ - Inspur F37X FPGA card 
 
 ## OS Required & Software Dependencies
- - ...
+ - CentOS 7 (Kernal version 3.10.0)
+ - Vivado 2021.2
+ - GNU compiler >= 8.3.0
  - OpenMM >= 6.0.0
  - MDTraj
  - ...
