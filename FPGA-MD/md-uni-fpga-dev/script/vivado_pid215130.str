@@ -1,0 +1,437 @@
+/*
+
+Xilinx Vivado v2020.2.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3118627 on Tue Feb  9 05:13:49 MST 2021
+IP Build: 3115676 on Tue Feb  9 10:48:11 MST 2021
+
+Process ID (PID): 215130
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sun Mar 31 11:48:01 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: AlmaLinux release 8.8 (Sapphire Caracal)
+OS Version: 4.18.0-477.10.1.el8_8.x86_64
+OS Architecture: amd64
+Available processors (cores): 40
+
+Display: 4
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/mnt/backup/tools/Xilinx-centos/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/mnt/backup/tools/Xilinx-centos/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /mnt/backup/xiaojing/md-uni-fpga-dev/script
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /mnt/backup/tools/Xilinx-centos/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2020.2
+RDI_DATADIR: /mnt/backup/tools/Xilinx-centos/Vivado/2020.2/data
+RDI_BINDIR: /mnt/backup/tools/Xilinx-centos/Vivado/2020.2/bin
+
+Vivado preferences file location: /root/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /root/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/mnt/backup/tools/Xilinx-centos/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/mnt/backup/xiaojing/md-uni-fpga-dev/script/vivado.log
+Vivado journal file location: 	/mnt/backup/xiaojing/md-uni-fpga-dev/script/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-215130-fpgap8k2
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /opt/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2020.2
+XILINX_SDK: /opt/Xilinx/Vitis/2020.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	145 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,506 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,506 MB. GUI used memory: 65 MB. Current time: 3/31/24, 11:48:02 AM CST
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.xpr", 0); // r
+// [GUI Memory]: 89 MB (+90652kb) [00:00:50]
+// [Engine Memory]: 1,507 MB (+1428244kb) [00:00:50]
+// Opening Vivado Project: /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.xpr. Version: Vivado v2020.2.2 
+// bz (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 104 MB (+11021kb) [00:01:19]
+// [GUI Memory]: 112 MB (+2864kb) [00:01:21]
+// [Engine Memory]: 1,673 MB (+95911kb) [00:01:21]
+// [GUI Memory]: 134 MB (+17184kb) [00:01:21]
+// [GUI Memory]: 141 MB (+302kb) [00:01:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  4391 ms.
+// [GUI Memory]: 155 MB (+7676kb) [00:01:23]
+// Tcl Message: open_project /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/backup/xiaojing/md-uni-fpga-dev/src'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,719 MB. GUI used memory: 97 MB. Current time: 3/31/24, 11:49:13 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1826 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1050 ms.
+// Tcl Message: INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 7729.625 ; gain = 164.469 ; free physical = 247918 ; free virtual = 256035 
+// Project name: md_base; location: /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base; part: xcvu37p-fsvh2892-2L-e
+// [Engine Memory]: 1,767 MB (+10324kb) [00:01:26]
+// Elapsed time: 36 seconds
+dismissDialog("Open Project"); // bz
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cr):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [Engine Memory]: 1,930 MB (+78841kb) [00:01:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  4111 ms.
+// Tcl Message: open_hw_manager 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'Q' command handler elapsed time: 5 seconds
+// [GUI Memory]: 169 MB (+6681kb) [00:01:35]
+dismissDialog("Open Hardware Manager"); // bz
+// [Engine Memory]: 2,057 MB (+31509kb) [00:01:35]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ak
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bz (cr):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2020.2.2   **** Build date : Feb  9 2021 at 05:51:02     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2020.2   ****** Build date   : Nov 04 2020-05:02:56     **** Build number : 2020.2.1604437376       ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3634 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/inspurA 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,266 MB. GUI used memory: 109 MB. Current time: 3/31/24, 11:49:47 AM CST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.bit} [get_hw_devices xcvu37p_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0] 
+// Tcl Message: current_hw_device [get_hw_devices xcvu37p_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 3,266 MB (+1159718kb) [00:01:57]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xcvu37p (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bz
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// bz (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.bit} [get_hw_devices xcvu37p_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xcvu37p_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 9055.574 ; gain = 0.000 ; free physical = 246144 ; free virtual = 254364 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [GUI Memory]: 179 MB (+1193kb) [00:02:29]
+// [GUI Memory]: 188 MB (+524kb) [00:02:36]
+// [GUI Memory]: 198 MB (+54kb) [00:02:36]
+// [GUI Memory]: 208 MB (+325kb) [00:02:39]
+// [GUI Memory]: 219 MB (+39kb) [00:02:42]
+// [GUI Memory]: 235 MB (+6207kb) [00:02:44]
+// [GUI Memory]: 247 MB (+203kb) [00:02:46]
+// WARNING: HEventQueue.dispatchEvent() is taking  22328 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xcvu37p (JTAG device index = 0) is programmed with a design that has 9 ILA core(s). 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,407 MB. GUI used memory: 183 MB. Current time: 3/31/24, 11:50:37 AM CST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device: Time (s): cpu = 00:00:47 ; elapsed = 00:00:25 . Memory (MB): peak = 9110.816 ; gain = 55.242 ; free physical = 246042 ; free virtual = 254265 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 3,437 MB (+7638kb) [00:02:48]
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_ACC_TOP/U_INIT_ACC__Data_2_RAM_TOP/U_INIT_ACC__Data_2_RAM/U_ila_10"}]] 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_LJ_13_TOP/U_Buff_2_fifo_top/U_Buff_2_Fifo/U_ila_8"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_LJ_13_TOP/U_INIT_DATA_TO_SUBCELLRAM/U_INIT_DATA_2_RAM/U_ila_5"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_LJ_13_TOP/U_Ram_to_Subcell_Ram/U_ila_6"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 3,617 MB (+8622kb) [00:02:51]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_5 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_Mark_all_subell_pre/U_ila_4"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_6 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_ila_9"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_7 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"xdma_wrapper_i/xdma_i/ila_axi_cu"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_8 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"xdma_wrapper_i/xdma_i/ila_axi_xdma_before"}]] 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_9 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"xdma_wrapper_i/xdma_i/ila_axil"}]] 
+// 'I' command handler elapsed time: 50 seconds
+// Elapsed time: 49 seconds
+dismissDialog("Program Device"); // bz
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 3,676 MB. GUI used memory: 201 MB. Current time: 3/31/24, 11:50:46 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 3,682 MB. GUI used memory: 178 MB. Current time: 3/31/24, 11:52:28 AM CST
+// Elapsed time: 204 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_2", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_3", 2); // m
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// bz (cr):  Close Hardware Manager : addNotify
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_4/hw_ila_data_4.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_5/hw_ila_data_5.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_6/hw_ila_data_6.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_7/hw_ila_data_7.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_8/hw_ila_data_8.wcfg} 
+// Tcl Message: save_wave_config {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.hw/hw_1/wave/hw_ila_data_9/hw_ila_data_9.wcfg} 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: WAVEFORM_DELAYED_MODEL_EVENT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_2"); // i
+// Tcl Message: close_hw_manager 
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_3"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_4"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_5"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_6"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_7"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_8"); // i
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_9"); // i
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  3398 ms.
+dismissDialog("Close Hardware Manager"); // bz
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, md_base_top (md_base_top.sv)]", 1); // D

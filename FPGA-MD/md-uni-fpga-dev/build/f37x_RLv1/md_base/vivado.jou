@@ -1,0 +1,171 @@
+#-----------------------------------------------------------
+# Vivado v2020.2.2 (64-bit)
+# SW Build 3118627 on Tue Feb  9 05:13:49 MST 2021
+# IP Build 3115676 on Tue Feb  9 10:48:11 MST 2021
+# Start of session at: Fri Nov 10 18:59:30 2023
+# Process ID: 377742
+# Current directory: /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base
+# Command line: vivado
+# Log file: /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/vivado.log
+# Journal file: /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 40
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 40
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 40
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+show_objects -name NET_ONLY [get_nets -hierarchical -top_net_of_hierarchical_group -filter { MARK_DEBUG == "TRUE" } ]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list xdma_wrapper_i/xdma_i/clk_wiz/inst/clk_out3 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list RL_inst/axi_araddr_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list RL_inst/axi_arready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list RL_inst/axi_arvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list RL_inst/axi_awaddr_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list RL_inst/axi_awvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list RL_inst/axi_rlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list RL_inst/axi_rvalid ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list RL_inst/axi_awready ]]
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list xdma_wrapper_i/xdma_i/clk_wiz/inst/clk_out3 ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list RL_inst/axi_araddr_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list RL_inst/axi_arready ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list RL_inst/axi_arvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list RL_inst/axi_awaddr_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list RL_inst/axi_awvalid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list RL_inst/axi_rlast ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list RL_inst/axi_rvalid ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list RL_inst/axi_awready ]]
+reset_run synth_1
+save_constraints -force
+launch_runs impl_1 -jobs 40
+wait_on_run impl_1
+close_design
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_4
+set_property -dict [list CONFIG.Component_Name {ila_4}] [get_ips ila_4]
+generate_target {instantiation_template} [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci]
+set_property generate_synth_checkpoint false [get_files  /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci]
+generate_target all [get_files  /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci]
+export_ip_user_files -of_objects [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci] -directory /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files/sim_scripts -ip_user_files_dir /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files -ipstatic_source_dir /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/modelsim} {questa=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/questa} {ies=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/ies} {xcelium=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/xcelium} {vcs=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/vcs} {riviera=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {8} CONFIG.C_NUM_OF_PROBES {2}] [get_ips ila_4]
+generate_target all [get_files  /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci]
+export_ip_user_files -of_objects [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci] -directory /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files/sim_scripts -ip_user_files_dir /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files -ipstatic_source_dir /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/modelsim} {questa=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/questa} {ies=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/ies} {xcelium=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/xcelium} {vcs=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/vcs} {riviera=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_PROBE20_WIDTH {14} CONFIG.C_PROBE17_WIDTH {6} CONFIG.C_PROBE12_WIDTH {256} CONFIG.C_PROBE10_WIDTH {36} CONFIG.C_PROBE5_WIDTH {256} CONFIG.C_PROBE3_WIDTH {36} CONFIG.C_NUM_OF_PROBES {24}] [get_ips ila_4]
+generate_target all [get_files  /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci]
+export_ip_user_files -of_objects [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.srcs/sources_1/ip/ila_4/ila_4.xci] -directory /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files/sim_scripts -ip_user_files_dir /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files -ipstatic_source_dir /mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.ip_user_files/ipstatic -lib_map_path [list {modelsim=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/modelsim} {questa=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/questa} {ies=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/ies} {xcelium=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/xcelium} {vcs=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/vcs} {riviera=/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 40
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 40
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 40
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.bit} [get_hw_devices xcvu37p_0]
+set_property PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0]
+current_hw_device [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+set_property PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0]
+set_property FULL_PROBES.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.ltx} [get_hw_devices xcvu37p_0]
+set_property PROGRAM.FILE {/mnt/backup/xiaojing/md-uni-fpga-dev/build/f37x_RLv1/md_base/md_base.runs/impl_1/md_base_top.bit} [get_hw_devices xcvu37p_0]
+program_hw_devices [get_hw_devices xcvu37p_0]
+refresh_hw_device [lindex [get_hw_devices xcvu37p_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"RL_inst/U_ila_4"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"xdma_wrapper_i/xdma_i/ila_axi_cu"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"xdma_wrapper_i/xdma_i/ila_axi_xdma_before"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_4 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcvu37p_0] -filter {CELL_NAME=~"xdma_wrapper_i/xdma_i/ila_axil"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {RL_inst/RL_Begin_en} {RL_inst/axi_araddr} {RL_inst/axi_araddr_en} {RL_inst/axi_araddr_reg_n_0_} {RL_inst/axi_arready} {RL_inst/axi_arvalid} {RL_inst/axi_awaddr} {RL_inst/axi_awaddr_reg_n_0_} {RL_inst/axi_awready} {RL_inst/axi_awvalid} {RL_inst/axi_rdata} {RL_inst/AXI_read_state} {RL_inst/axi_rlast} {RL_inst/axi_rvalid} {RL_inst/axi_rvalid_1} {RL_inst/axi_wdata} {RL_inst/axi_wlast} {RL_inst/axi_wready} {RL_inst/axi_wvalid} {RL_inst/n_0_0} {RL_inst/n_0_1} {RL_inst/New_Homecell_begin_Cnt} {RL_inst/New_Homecell_begin_en} {RL_inst/ONE_LEN_DONE} {RL_inst/read_valid_cnt} {RL_inst/Update_ALL_Force_Ram_done} }
