@@ -1,0 +1,17 @@
+OC 14
+params in mergedType
+
+-------------
+nbfixTypeSet:
+{'HGA1', 'OC2D2', 'OG2D2', 'OC2DP', 'OG2P1', 'SS1', 'POT', 'CRL2', 'HAL2', 'O2L', 'HAL1', 'OS', 'OC', 'OCL', 'SO', 'MG', 'HGA2', 'CRL1', 'CLA', 'SOD', 'CTL1', 'OBL'}
+mergedTypes:
+['NH3', 'HC', 'CT1', 'HB1', 'CT2', 'HA2', 'S', 'CT3', 'HA3', 'C', 'O', 'HA1', 'OH1', 'CC', 'OC', 'HB2', 'CP3', 'CP1', 'CY', 'CA', 'HP', 'CPT', 'CPH1', 'HR1', 'HR3', 'HS', 'OT']
+typeToMergedType:
+{'NH3': 0, 'HC': 1, 'CT1': 2, 'HB1': 3, 'CT2': 4, 'HA2': 5, 'S': 6, 'CT3': 7, 'HA3': 8, 'C': 9, 'O': 10, 'NH1': 0, 'H': 1, 'HA1': 11, 'OH1': 12, 'CT2A': 4, 'CC': 13, 'OC': 14, 'NC2': 0, 'HB2': 15, 'NH2': 0, 'N': 0, 'CP3': 16, 'CP2': 16, 'CP1': 17, 'CY': 18, 'CA': 19, 'HP': 20, 'NY': 0, 'CPT': 21, 'CAI': 18, 'CPH1': 22, 'NR1': 0, 'CPH2': 22, 'HR1': 23, 'NR2': 0, 'HR3': 24, 'HS': 25, 'OT': 26, 'HT': 1}
+len(typetoMergedType):
+40
+len(allTypes):
+40
+--------------
+numLjTypes: 27
+
