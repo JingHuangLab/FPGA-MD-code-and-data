@@ -15,10 +15,9 @@ FPGA with High-Bandwidth Memory".
  - ...
 
 ## Build Instructions
-### Step1:
-### Step2:
-### Step3:
-### Step4:
+### C code: Use the Makefile in the tools to build the code.
+
+### VHDL and Verilog: Use Vivado to build the project.
 ...
 
 ## Simulation inputs and outputs 
