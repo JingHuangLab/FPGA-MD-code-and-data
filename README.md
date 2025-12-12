@@ -12,13 +12,11 @@ FPGA with High-Bandwidth Memory".
  - GNU compiler >= 8.3.0
  - OpenMM >= 6.0.0
  - MDTraj
- - ...
 
 ## Build Instructions
 ### C code: Use the Makefile in the tools to build the code.
 
 ### VHDL and Verilog: Use Vivado to build the project.
-...
 
 ## Simulation inputs and outputs 
 Simulation inputs, outputs, analysis scripts are given in the `simulations` 
